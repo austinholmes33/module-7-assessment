@@ -7,9 +7,9 @@ function addToZero (arr) {
       sum = arr[left] + arr[right];
       if (sum === 0) {
         return true
-      }else if (sum > 0) {
+      } else if (sum > 0) {
         right--;
-      }else{
+      } else {
         left++;
       }
       return false
@@ -18,16 +18,16 @@ function addToZero (arr) {
 
 //console.log(addToZero([2, 3, 4, -2]))
 // runtime complexity is O(n)
-// space complexity O(n)
+// space complexity O(1)
 
 // UNIQUE CHARACTERS
 function hasUniqueChar (arr) {
     return new Set(arr).size === arr.length
 }
 
-// console.log(hasUniqueChar([2, 3, 4, 4]))
+// console.log(hasUniqueChar([2, 3, 4, 5]))
 // runtime complexity O(n)
-// space complexity O(n)
+// space complexity O(1)
 
 //PANGRAM SENTENCE
 
@@ -45,7 +45,7 @@ function isPangram (str) {
 
 //console.log(isPangram('The quick brown fox jumps over the lazy dog'))
 // runtime complexity O(n)
-// space complexity O(n)
+// space complexity O(1)
 
 //LONGEST WORD
 function findLongestWord (arr) {
@@ -61,7 +61,7 @@ function findLongestWord (arr) {
 
 //console.log(findLongestWord(['hi', 'hello', 'welcome', 'bye']))
 // runtime complexity O(n)
-// space complexity O(n)
+// space complexity O(1)
 
 // Final thoughts on complexity: All of these functions take input of an array (including the string in pangram, which has the worst-case possibillity for infinite length)
 // For this reason, the space complexity on all of them is linear. For the runtime complexity, each function only loops over that array once, giving in linear runtime as well.
